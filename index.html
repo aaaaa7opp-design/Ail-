@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102c46">
+<title>اتعلّم | دروس السادس الإعدادي</title>
+<style>
+:root{--navy:#102c46;--blue:#1b4965;--gold:#f3c969;--paper:#f5f7fb;--ink:#172b3a;--muted:#647789;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7}
+header{background:var(--navy);color:white;padding:18px 16px 28px;border-radius:0 0 26px 26px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:900px;margin:auto}
+.brand{display:flex;align-items:center;gap:10px;font-size:1.25rem;font-weight:800}.logo{display:grid;place-items:center;background:var(--gold);color:var(--navy);width:42px;height:42px;border-radius:13px;font-size:22px}
+.pill{border:1px solid #ffffff55;border-radius:999px;padding:5px 10px;font-size:.78rem;color:#e4edf5}
+.hero{max-width:900px;margin:24px auto 0}.hero h1{font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.3;margin:10px 0}.hero p{color:#d5e1ec;margin:8px 0 18px}.hero strong{color:var(--gold)}
+.search{display:flex;background:white;border-radius:14px;padding:5px;gap:6px;max-width:560px}.search input{border:0;outline:0;min-width:0;flex:1;padding:12px;font:inherit;color:var(--ink)}.search button,.mainbtn{border:0;background:var(--gold);color:var(--navy);font-weight:800;padding:10px 15px;border-radius:10px;font:inherit;cursor:pointer}
+main{max-width:900px;margin:24px auto;padding:0 14px}.welcome{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px}.welcome h2{margin:0;font-size:1.25rem}.welcome p{margin:2px 0;color:var(--muted);font-size:.9rem}
+.subjects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.subject{background:white;border:1px solid #e6ebf1;border-radius:16px;padding:14px;text-align:right;cursor:pointer;transition:.15s;min-height:112px;color:var(--ink);font:inherit}.subject:active{transform:scale(.98)}.subject .emoji{font-size:1.65rem}.subject b{display:block;margin-top:4px}.subject small{color:var(--muted)}
+.subject.active{border:2px solid var(--blue);background:#edf5fa}
+.sectionhead{display:flex;justify-content:space-between;align-items:center;margin:26px 0 12px}.sectionhead h2{font-size:1.2rem;margin:0}.sectionhead span{font-size:.8rem;color:var(--muted)}
+.lessons{display:grid;grid-template-columns:1fr;gap:12px}.lesson{background:white;border:1px solid #e6ebf1;border-radius:16px;padding:14px;display:flex;gap:12px;align-items:center}.thumb{width:78px;height:78px;flex:0 0 78px;border-radius:13px;background:linear-gradient(135deg,var(--navy),var(--blue));color:var(--gold);display:grid;place-items:center;font-size:1.8rem}.lesson h3{margin:0 0 3px;font-size:1rem}.lesson p{margin:0;color:var(--muted);font-size:.85rem}.lesson a{display:inline-block;margin-top:8px;text-decoration:none;background:#edf5fa;color:var(--navy);padding:5px 10px;border-radius:8px;font-size:.85rem;font-weight:700}
+.notice{background:#fff8e4;border:1px solid #f2df9e;padding:13px 14px;border-radius:14px;color:#66511b;font-size:.9rem;margin-top:20px}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:28px 14px 36px}
+.empty{display:none;text-align:center;background:white;padding:22px;border-radius:14px;color:var(--muted)}
+
+.adminbox{max-width:900px;margin:28px auto 0;background:#fff;border:1px solid #e1e8ef;border-radius:18px;padding:18px}.adminbox h2{margin:0 0 4px}.adminbox p{color:var(--muted);font-size:.9rem}.adminpanel{display:grid;gap:8px;margin-top:12px}.adminpanel label{font-weight:700;font-size:.9rem}.adminpanel input,.adminpanel select{width:100%;padding:12px;border:1px solid #ccd7e1;border-radius:10px;font:inherit;background:#fff;color:var(--ink)}.mainbtn,.secondarybtn{font:inherit;cursor:pointer;border-radius:10px;padding:11px 14px;font-weight:800}.secondarybtn{border:1px solid #ccd7e1;background:#f5f7fb;color:var(--navy)}#adminMessage{min-height:1.5em;margin-bottom:0}.lesson .telegram-post{width:100%;min-width:0}.lesson .embedwrap{width:100%;overflow:hidden}.lesson{align-items:flex-start}.lesson .lessonbody{min-width:0;flex:1}.lesson .lessonbody a{overflow-wrap:anywhere}.lesson .subjecttag{display:inline-block;background:#edf5fa;color:var(--navy);padding:2px 8px;border-radius:8px;font-size:.78rem;margin:5px 0}
+
+@media(min-width:650px){.subjects{grid-template-columns:repeat(4,minmax(0,1fr))}.lessons{grid-template-columns:repeat(2,minmax(0,1fr))}header{padding-bottom:34px}.hero{margin-top:32px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="brand"><span class="logo">✦</span><span>اتعلّم</span></div>
+    <span class="pill">منصة السادس الإعدادي</span>
+  </div>
+  <div class="hero">
+    <span class="pill">خطوتك الأولى نحو النجاح</span>
+    <h1>تعلّم اليوم، <strong>وتفوّق باچر</strong></h1>
+    <p>مكانك للدروس والمراجعة وتنظيم رحلة السادس الإعدادي.</p>
+    <div class="search">
+      <input id="search" type="search" placeholder="ابحث عن مادة أو درس..." aria-label="ابحث عن مادة أو درس">
+      <button onclick="filterLessons()">بحث</button>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="welcome">
+    <div><h2>أهلاً بيك 👋</h2><p>اختار المادة وابدأ أول خطوة.</p></div>
+    <span class="pill" style="background:#e8eef5;color:#29465c;border-color:transparent">نسخة تجريبية</span>
+  </div>
+  <div class="sectionhead"><h2>المواد الدراسية</h2><span>اضغط على مادة للتصفية</span></div>
+  <div class="subjects" id="subjects">
+    <button class="subject active" data-subject="الكل" onclick="chooseSubject('الكل',this)"><span class="emoji">📚</span><b>كل المواد</b><small>تصفّح الدروس</small></button>
+    <button class="subject" data-subject="رياضيات" onclick="chooseSubject('رياضيات',this)"><span class="emoji">📐</span><b>الرياضيات</b><small>قوانين ومسائل</small></button>
+    <button class="subject" data-subject="فيزياء" onclick="chooseSubject('فيزياء',this)"><span class="emoji">⚡</span><b>الفيزياء</b><small>شرح وتطبيق</small></button>
+    <button class="subject" data-subject="كيمياء" onclick="chooseSubject('كيمياء',this)"><span class="emoji">🧪</span><b>الكيمياء</b><small>معادلات ومراجعة</small></button>
+    <button class="subject" data-subject="أحياء" onclick="chooseSubject('أحياء',this)"><span class="emoji">🧬</span><b>الأحياء</b><small>فهم وحفظ</small></button>
+    <button class="subject" data-subject="عربي" onclick="chooseSubject('عربي',this)"><span class="emoji">🖊️</span><b>اللغة العربية</b><small>قواعد وأدب</small></button>
+    <button class="subject" data-subject="إنكليزي" onclick="chooseSubject('إنكليزي',this)"><span class="emoji">🔤</span><b>الإنكليزي</b><small>قواعد وقراءة</small></button>
+    <button class="subject" data-subject="إسلامية" onclick="chooseSubject('إسلامية',this)"><span class="emoji">🌙</span><b>الإسلامية</b><small>مراجعة الفصول</small></button>
+  </div>
+  <div class="sectionhead"><h2 id="lessonTitle">دروس مقترحة</h2><span id="count">6 دروس</span></div>
+  <div class="lessons" id="lessons"><div class="notice">جاري تحميل المحاضرات…</div></div>
+  <div class="empty" id="empty">ما لقينا دروس تطابق بحثك. جرّب كلمة ثانية.</div>
+  <div class="notice">💡 <b>ملاحظة:</b> المحاضرات تُضاف من لوحة المدير باستخدام روابط منشورات قناة تيليجرام العامة.</div>
+  <section class="adminbox" id="adminbox">
+    <h2>إدارة المحاضرات 🔐</h2>
+    <p>هذا القسم للمدير فقط. سجّل دخولك لإضافة محاضرات من قناة تيليجرام العامة.</p>
+    <div id="loginPanel" class="adminpanel">
+      <label for="adminEmail">إيميل المدير</label><input id="adminEmail" type="email" autocomplete="username" placeholder="إيميل حساب المدير">
+      <label for="adminPassword">كلمة المرور</label><input id="adminPassword" type="password" autocomplete="current-password" placeholder="كلمة مرور حساب المدير">
+      <button class="mainbtn" id="loginBtn" type="button">دخول المدير</button>
+    </div>
+    <div id="managePanel" class="adminpanel" hidden>
+      <p id="signedInText">تم تسجيل الدخول.</p>
+      <label for="lectureTitle">عنوان المحاضرة</label><input id="lectureTitle" type="text" maxlength="120" placeholder="مثال: الفصل الأول — المحاضرة 1">
+      <label for="lectureSubject">المادة</label><select id="lectureSubject"><option>رياضيات</option><option>فيزياء</option><option>كيمياء</option><option>أحياء</option><option>عربي</option><option>إنكليزي</option><option>إسلامية</option></select>
+      <label for="lectureUrl">رابط منشور المحاضرة في تيليجرام</label><input id="lectureUrl" type="url" placeholder="https://t.me/channelname/123">
+      <button class="mainbtn" id="addLectureBtn" type="button">＋ حفظ المحاضرة</button>
+      <button class="secondarybtn" id="logoutBtn" type="button">تسجيل الخروج</button>
+    </div>
+    <p id="adminMessage" role="status" aria-live="polite"></p>
+  </section>
+</main>
+<footer>اتعلّم © 2026 — منصة تعليمية تجريبية لطلاب السادس الإعدادي في العراق</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+// بعد إنشاء مشروع Supabase، ضع هنا Project URL و Publishable key فقط.
+const SUPABASE_URL = 'PASTE_YOUR_SUPABASE_PROJECT_URL_HERE';
+const SUPABASE_PUBLISHABLE_KEY = 'PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE';
+let supabaseClient = null;
+let selected = 'الكل';
+const subjects = ['رياضيات','فيزياء','كيمياء','أحياء','عربي','إنكليزي','إسلامية'];
+const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('PASTE_') && (SUPABASE_PUBLISHABLE_KEY.startsWith('sb_publishable_') || SUPABASE_PUBLISHABLE_KEY.startsWith('eyJ')) && !SUPABASE_PUBLISHABLE_KEY.includes('PASTE_');
+if (configured && window.supabase) supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+function chooseSubject(subject, el){
+ selected=subject;
+ document.querySelectorAll('.subject').forEach(b=>b.classList.toggle('active',b===el));
+ document.getElementById('lessonTitle').textContent=subject==='الكل'?'دروس ومحاضرات':'محاضرات '+subject;
+ filterLessons();
+}
+function filterLessons(){
+ const q=document.getElementById('search').value.trim().toLowerCase(); let visible=0;
+ document.querySelectorAll('.lesson[data-subject]').forEach(card=>{
+  const okSubject=selected==='الكل'||card.dataset.subject===selected;
+  const okText=(card.dataset.title+' '+card.innerText).toLowerCase().includes(q);
+  const show=okSubject&&okText; card.style.display=show?'flex':'none'; if(show)visible++;
+ });
+ document.getElementById('count').textContent=visible+' محاضرة';
+ document.getElementById('empty').style.display=visible?'none':'block';
+}
+document.getElementById('search').addEventListener('input',filterLessons);
+document.getElementById('search').addEventListener('keydown',e=>{if(e.key==='Enter')filterLessons()});
+function say(msg){document.getElementById('adminMessage').textContent=msg;}
+function telegramPostInfo(url){
+ try { const u=new URL(url.trim()); if(!['t.me','www.t.me'].includes(u.hostname)) return null;
+  const parts=u.pathname.split('/').filter(Boolean); if(parts[0]==='s') parts.shift();
+  if(parts.length<2 || !/^\d+$/.test(parts[1])) return null;
+  return {channel:parts[0],post:parts[1]};
+ } catch(e){return null;}
+}
+function makeLesson(lecture){
+ const article=document.createElement('article'); article.className='lesson'; article.dataset.subject=lecture.subject; article.dataset.title=lecture.title;
+ const thumb=document.createElement('div'); thumb.className='thumb'; thumb.textContent=({'رياضيات':'📐','فيزياء':'⚡','كيمياء':'🧪','أحياء':'🧬','عربي':'🖊️','إنكليزي':'🔤','إسلامية':'🌙'})[lecture.subject]||'📚'; article.appendChild(thumb);
+ const body=document.createElement('div'); body.className='lessonbody'; const h=document.createElement('h3'); h.textContent=lecture.title; body.appendChild(h);
+ const tag=document.createElement('span'); tag.className='subjecttag'; tag.textContent=lecture.subject; body.appendChild(tag);
+ const info=telegramPostInfo(lecture.post_url);
+ if(info){const wrap=document.createElement('div');wrap.className='embedwrap';const widget=document.createElement('script');widget.async=true;widget.src='https://telegram.org/js/telegram-widget.js?22';widget.setAttribute('data-telegram-post',info.channel+'/'+info.post);widget.setAttribute('data-width','100%');wrap.appendChild(widget);body.appendChild(wrap);}
+ const link=document.createElement('a');link.href=lecture.post_url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='فتح المنشور في تيليجرام ↗';body.appendChild(link);article.appendChild(body);return article;
+}
+async function loadLectures(){
+ const container=document.getElementById('lessons');
+ if(!supabaseClient){container.innerHTML='<div class="notice">الموقع جاهز للربط، لكن يلزم وضع رابط مشروع Supabase ومفتاح Publishable داخل الكود أولاً.</div>';document.getElementById('count').textContent='0 محاضرة';return;}
+ const {data,error}=await supabaseClient.from('lectures').select('id,title,subject,post_url,created_at').order('created_at',{ascending:false});
+ if(error){container.innerHTML='<div class="notice">تعذّر تحميل المحاضرات. راجع إعدادات قاعدة البيانات والصلاحيات.</div>';return;}
+ container.replaceChildren(); for(const lecture of data||[]) container.appendChild(makeLesson(lecture)); filterLessons();
+}
+async function refreshAuth(){
+ if(!supabaseClient)return;
+ const {data}=await supabaseClient.auth.getSession(); const signed=!!data.session;
+ document.getElementById('loginPanel').hidden=signed; document.getElementById('managePanel').hidden=!signed;
+ if(signed) document.getElementById('signedInText').textContent='مسجّل الدخول: '+(data.session.user.email||'المدير');
+}
+document.getElementById('loginBtn').addEventListener('click',async()=>{
+ if(!supabaseClient){say('أكمل إعداد Supabase أولاً.');return;}
+ const email=document.getElementById('adminEmail').value.trim(),password=document.getElementById('adminPassword').value;
+ if(!email||!password){say('اكتب الإيميل وكلمة المرور.');return;}
+ const {error}=await supabaseClient.auth.signInWithPassword({email,password}); if(error){say('تعذّر الدخول. تأكد من الإيميل وكلمة المرور.');return;} say('تم تسجيل الدخول.');await refreshAuth();
+});
+document.getElementById('logoutBtn').addEventListener('click',async()=>{if(supabaseClient)await supabaseClient.auth.signOut();say('تم تسجيل الخروج.');await refreshAuth();});
+document.getElementById('addLectureBtn').addEventListener('click',async()=>{
+ if(!supabaseClient){say('أكمل إعداد Supabase أولاً.');return;}
+ const {data:{session}}=await supabaseClient.auth.getSession(); if(!session){say('سجّل دخول المدير أولاً.');await refreshAuth();return;}
+ const title=document.getElementById('lectureTitle').value.trim(),subject=document.getElementById('lectureSubject').value,post_url=document.getElementById('lectureUrl').value.trim();
+ if(!title||!post_url){say('اكتب عنوان المحاضرة والرابط.');return;}
+ if(!telegramPostInfo(post_url)){say('الرابط لازم يكون منشوراً عاماً بصيغة https://t.me/اسم_القناة/رقم_المنشور');return;}
+ const {error}=await supabaseClient.from('lectures').insert({title,subject,post_url});
+ if(error){say('لم تُحفظ المحاضرة. تأكد من صلاحيات المدير وأن الرابط غير مكرر.');return;}
+ document.getElementById('lectureTitle').value='';document.getElementById('lectureUrl').value='';say('انضافت المحاضرة بنجاح.');await loadLectures();
+});
+if(supabaseClient)supabaseClient.auth.onAuthStateChange(()=>{refreshAuth();});
+loadLectures();refreshAuth();
+</script>
+</body>
+</html>
